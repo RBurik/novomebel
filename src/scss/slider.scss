@@ -1,0 +1,32 @@
+.slick-slide {
+  outline: none;
+}
+.slick-list {
+  overflow: inherit;
+}
+.slick-arrow {
+  font-size: 0;
+  position: absolute;
+  top: calc(50% - 1.75rem);
+  width: .875rem;
+  height: 1.75rem;
+  background-image: url(../img/arrow-thin.svg);
+  background-color: inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: .3s;
+}
+.slick-prev {
+  left: 2.5rem;
+  &:hover {
+    transform: translateX(-.125rem);
+  }
+}
+.slick-next {
+  right: 2.5rem;
+  transform: rotate(180deg);
+  &:hover {
+    transform: translateX(.125rem) rotate(180deg);
+  }
+}
